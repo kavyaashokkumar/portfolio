@@ -1,0 +1,181 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #1e1e2f, #3b3b58);
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ff4d6d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d6d;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#darkModeToggle:hover {
+    transform: rotate(20deg);
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 100px 10%;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ff4d6d;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 77, 109, 0.5);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ff4d6d;
+}
+
+/* About */
+#about p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* Projects */
+#projects {
+    background: rgba(255, 77, 109, 0.2);
+    padding: 80px 10%;
+}
+
+#projects h3 {
+    font-size: 24px;
+    color: #ff4d6d;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background: rgba(255, 77, 109, 0.3);
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+    background: rgba(255, 77, 109, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(to right, #0e0e1a, #1a1a2e);
+    color: white;
+}
+
+.dark-mode .profile-pic {
+    border: 3px solid white;
+}
